@@ -1,0 +1,132 @@
+ * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(120deg, #1f1c2c, #928dab);
+      color: #fff;
+      padding: 40px;
+    }
+    .cv-container {
+      max-width: 1000px;
+      margin: auto;
+      background: #2d2a3e;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.8em;
+      color: #00d8ff;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1em;
+      color: #bbb;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      font-size: 1.6em;
+      margin-bottom: 15px;
+      color: #00d8ff;
+      position: relative;
+    }
+    .section h2::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: #00d8ff;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+    .skills, .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .info-icon {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1em;
+    }
+    .interests span {
+      display: inline-block;
+      background: #444;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 5px;
+    }
+    .tech-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .tech-icons i, .tech-icons img {
+      font-size: 1.8em;
+      color: #00d8ff;
+      background: #3c3a4f;
+      padding: 10px;
+      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+    .size {
+        width: 80px;
+        height: 40px;
+    }
+    .button {
+       background-color: #00d8ff;
+       color: #fff;
+         border: none;
+         width: 200px;
+         height: 70px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    .button-t {
+        text-align: center;
+    }
+    .button:hover {
+        background-color: #00b3cc;
+        cursor: pointer;
+    }
+    .button2 {
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+    .button-2 {
+        background-color: #00d8ff;
+        color: #fff;
+        border: none;
+        width: 200px;
+        height: 70px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        
+    }
+    @media print {
+        body {
+            zoom: 0.75;
+        }
+        .button
+    }
