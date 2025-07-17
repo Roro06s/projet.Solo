@@ -1,0 +1,25 @@
+{
+  "name": "projet.solo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roro06s/projet.Solo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roro06s/projet.Solo/issues"
+  },
+  "homepage": "https://github.com/Roro06s/projet.Solo#readme",
+  "dependencies": {
+    "eslint": "^9.31.0",
+    "htmlhint": "^1.6.3",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}

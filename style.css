@@ -276,3 +276,14 @@ background-clip: text;
   transform: scale(1.02);
   transition: transform 0.3s ease-in-out;
 }
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .bienvenue-title {
+    font-size: clamp(2rem, 7vw, 3.5rem);
+    text-align: left;
+    word-break: break-word;
+  }
+  .big {
+    font-size: 1.3rem;
+  }
+}
