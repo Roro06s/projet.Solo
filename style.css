@@ -2,10 +2,13 @@
 h1 {
   font-size: 2.5rem;
 }
+
 section h1 {
   font-size: 2.5rem;
 }
-/*Menu burger*/
+
+/* Menu burger */
+
 .navbar-toggler {
   border: none;
 }
@@ -14,12 +17,10 @@ section h1 {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.navbar {
-    background-color: rgba(0, 0, 0, 0.5);
-}
+
 
 .navbar {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(0 0 0 / 100%);
 }
 
 
@@ -38,7 +39,7 @@ section h1 {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(45deg, rgb(17, 55, 145), #d4af37);
+    background: linear-gradient(45deg, rgb(17 55 145), #d4af37);
     transition: width 0.4s ease;
 }
 
@@ -49,9 +50,8 @@ section h1 {
 
 
 
-.Ro {
-  background: linear-gradient(45deg, rgb(137, 143, 62), #d4af37); /* Dégradé de couleurs */
-  -webkit-background-clip: text; /* Coupe le fond selon la forme du texte */
+.ro {
+  background: linear-gradient(45deg, rgb(137 143 62), #d4af37); /* Dégradé de couleurs */
   -webkit-text-fill-color: transparent; /* Rend le texte transparent pour voir le fond à travers */
   background-clip: text; /* Pour les navigateurs compatibles */
   font-weight: bold; /* Optionnel : pour bien ressortir */
@@ -63,25 +63,26 @@ section h1 {
     width: 80px;
     height: 80px;
     border-radius: 40%;
-    animation: logoSpin 20s linear infinite;
+    animation: logo-spin 20s linear infinite;
     
 }
 
 
-@keyframes logoPulse {
-    0% 100% {opacity: 1;}
+@keyframes logo-pulse {
+    0%, 100% {opacity: 1;}
     50% {opacity: 0.7;}
 }
 
-@keyframes logoSpin {
+@keyframes logo-spin {
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
 }
+
 .logo-link {
     display: flex;
     align-items: center;
-    gap: 10;
-    animation: logoPulse 3s infinite ease-in-out;
+    gap: 10px;
+    animation: logo-pulse 3s infinite ease-in-out;
     transition: transform 0.3s ease;
 
 }
@@ -95,9 +96,9 @@ section h1 {
     font-size: clamp(2.8rem, 14vw, 7rem);
  font-weight: 400;
 background: linear-gradient(45deg, #d4af37, #1b2eaf);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 background-clip: text;
+-webkit-text-fill-color: transparent;
+
 }
 
 .big {
@@ -114,14 +115,16 @@ background-clip: text;
 .apparition {
     opacity: 0;
     transform: translateX(-100px);
-    animation: slideInLeft 2s ease-out forwards;
+    animation: slide-in-left 2s ease-out forwards;
 }
-@keyframes slideInLeft {
+
+@keyframes slide-in-left {
     to{
         opacity: 1;
         transform: translateX(0);
     }
 }
+
 .apparition-bas {
   opacity: 0;
   transform: translateY(100px);
@@ -150,11 +153,13 @@ background-clip: text;
   opacity: 1;
   transform: translateY(0);
 }
+
 .hero-section, .qui-suis-je-section {
   min-height: 100vh;
   padding: 5rem 2rem;
   transition: all 1s ease;
 }
+
 .qui-suis-je {
   color: white;
 }
@@ -166,11 +171,13 @@ h2 {
 .hero {
     background: none;
 }
+
 .portrait {
     z-index: 0;
     background: none;
     
 }
+
 .bg-animation {
 position: fixed;
 top: 0;
@@ -199,7 +206,6 @@ overflow: hidden;
 
 .oe {
   background: linear-gradient(45deg, #d4af37, #1b2eaf);
--webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
 }
@@ -209,7 +215,7 @@ background-clip: text;
   padding: 2rem;
   margin: 3rem auto;
   max-width: 800px;
-  background: rgba(20, 20, 20, 0.6);
+  background: rgb(20 20 20 / 60%);
   border-radius: 1rem;
   color: white;
   z-index: 1;
@@ -241,7 +247,7 @@ background-clip: text;
 
 
 .skills-section {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(0 0 0 / 80%);
   min-height: 100vh;
 }
 
@@ -254,7 +260,6 @@ background-clip: text;
 
 .progress-bar {
   background: linear-gradient(45deg, #d4af37, #1b2eaf);
-  
   font-weight: bold;
   text-align: right;
   padding-right: 10px;
@@ -277,12 +282,13 @@ background-clip: text;
   transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 1200px) and (min-width: 768px) {
+@media (768px <= width <= 1200px) {
   .bienvenue-title {
     font-size: clamp(2rem, 7vw, 3.5rem);
     text-align: left;
-    word-break: break-word;
+    overflow-wrap: break-word;
   }
+  
   .big {
     font-size: 1.3rem;
   }
